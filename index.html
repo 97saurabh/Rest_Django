@@ -12,12 +12,12 @@
 
     <div class="container" style="margin-top:2em;">
 
-        <h1>Api Documentation</h1>
+        <h1 style="text-align: right;font-family: monospace;">Api Documentation</h1>
 
-        <i>{domain}</i> :  <b> saurabh-rest-django.herokuapp.com</b>
+        <p style="text-align: right;"><i>{url}</i> :  <b> http://saurabh-rest-django.herokuapp.com/</b></p>
 
 
-        <h4>Accounts</h4>
+        
 
         <div style="background-color:#e1eaf7;">
 
@@ -166,6 +166,152 @@
             </div>
 
         </div>
+        <!-- User Get -->
+
+
+        <div style="background-color:#e1eaf7;">
+
+          <div style=" border-style: solid;border-color:#009cd4;background-color: #abe3f7; ">
+
+              <button class="btn btn-sm btn-info" disabled style="margin:4px;">GET</button> <b>/users/</b>
+          </div>
+          <div>
+              <div style="margin-top:6px;margin-left: 10px;">
+                  <h6>Implementation Notes :</h6>
+                  <p style="margin-left: 15px;">To get List of all Users.</p> 
+              </div>
+          
+          </div>
+          <div>
+            
+              <div style="margin-top:6px;margin-left: 10px; margin-right:10px;">
+                  <h6>Parameters :</h6>
+                  <i style="margin-left: 20px;">No parameter required</i>
+              </div>
+          
+          </div>
+
+          <div style="background-color: beige;width: 500px;margin-left: 5px;">
+              <div style="margin-top:10px;margin-left: 10px;margin-bottom: 10px;">
+                  <h6>Response Class (Status 200):</h6>
+                  <p style="margin-left: 15px;">[</p>
+
+
+
+                      <p style="margin-left: 30px;">{</p>
+
+
+                          <p style="margin-left: 45px;">"url": "http://127.0.0.1:8000/users/1/",</p>
+                          <p style="margin-left: 45px;"> "id": 1,</p>
+                          <p style="margin-left: 45px;">"username": saurabh1,</p>
+                          <p style="margin-left: 45px;"> "snippets": [</p>
+
+                          <p style="margin-left: 60px;"> "http://saurabh-rest-django.herokuapp.com/snippets/1/"</p>
+
+                          <p style="margin-left: 45px;">]</p>
+                          
+
+
+                      <p style="margin-left: 30px;">}</p>
+                      <p style="margin-left: 30px;">{</p>
+
+
+                        <p style="margin-left: 45px;">"url": "http://127.0.0.1:8000/users/1/",</p>
+                        <p style="margin-left: 45px;"> "id": 1,</p>
+                        <p style="margin-left: 45px;">"username": saurabh1,</p>
+                        <p style="margin-left: 45px;"> "snippets": [</p>
+
+                        <p style="margin-left: 60px;"> "http://saurabh-rest-django.herokuapp.com/snippets/1/"</p>
+
+                        <p style="margin-left: 45px;">]</p>
+                        
+
+
+                    <p style="margin-left: 30px;">}</p>
+
+
+
+
+                      
+
+                  <p style="margin-left: 15px;">]</p> 
+              </div>
+          
+          </div>
+
+      </div>
+
+
+
+
+
+
+        <!-- User GET END -->
+
+
+
+        <!-- USer id GET -->
+
+
+        <div style="background-color:#e1eaf7;">
+
+          <div style=" border-style: solid;border-color:#009cd4;background-color: #abe3f7; ">
+
+              <button class="btn btn-sm btn-info" disabled style="margin:4px;">GET</button> <b>/users/{id}/</b>
+          </div>
+          <div>
+              <div style="margin-top:6px;margin-left: 10px;">
+                  <h6>Implementation Notes :</h6>
+                  <p style="margin-left: 15px;">To get User details.</p> 
+              </div>
+          
+          </div>
+          <div>
+            
+              <div style="margin-top:6px;margin-left: 10px; margin-right:10px;">
+                  <h6>Parameters :</h6>
+                  <i style="margin-left: 20px;">No parameter required</i>
+              </div>
+          
+          </div>
+
+          <div style="background-color: beige;width: 500px;margin-left: 5px;">
+              <div style="margin-top:10px;margin-left: 10px;margin-bottom: 10px;">
+                  <h6>Response Class (Status 200):</h6>
+                  
+
+
+
+                      <p style="margin-left: 15px;">{</p>
+
+
+                          <p style="margin-left: 30px;">"url": "http://127.0.0.1:8000/users/1/",</p>
+                          <p style="margin-left: 30px;"> "id": 1,</p>
+                          <p style="margin-left: 30px;">"username": saurabh1,</p>
+                          <p style="margin-left: 30px;"> "snippets": [</p>
+
+                          <p style="margin-left: 45px;"> "http://saurabh-rest-django.herokuapp.com/snippets/1/"</p>
+
+                          <p style="margin-left: 30px;">]</p>
+                          
+
+
+                      <p style="margin-left: 15px;">}</p>
+                    
+              </div>
+          
+          </div>
+
+      </div>
+
+
+
+
+
+
+        <!-- USer id GET END -->
+
+
 
 
         <!-- Snippets -->
@@ -180,7 +326,7 @@
             <div>
                 <div style="margin-top:6px;margin-left: 10px;">
                     <h6>Implementation Notes :</h6>
-                    <p style="margin-left: 15px;">To get Token for a user to authenticate.</p> 
+                    <p style="margin-left: 15px;">To get List of all Snippets.</p> 
                 </div>
             
             </div>
@@ -246,11 +392,447 @@
 
         <!-- Snippets Finish -->
 
+        <!-- Snipt Post -->
+        <div style="background-color:#e1eaf7;">
+
+            <div style=" border-style: solid;border-color: #f51111;background-color: #ffcccc; ">
+
+                <button class="btn btn-sm btn-danger" disabled style="margin:4px;">POST</button> <b>/snippets/</b> 
+                        </div>
+            <div>
+                <div style="margin-top:6px;margin-left: 10px;">
+                    <h6>Implementation Notes :</h6>
+                    <p style="margin-left: 15px;">To Post New Snippet Data.</p> 
+                </div>
+            
+            </div>
+            <div>
+              
+                <div style="margin-top:6px;margin-left: 10px; margin-right:10px;">
+                    <h6>Parameters :</h6>
+                    <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Parameter</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Parameter Type</th>
+                            <th scope="col">Data Type</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>Authorization</th>
+                            <td>Token <i>{ Get your Token first }</i></td>
+                            <td>Header</td>
+                            <td>String</td>
+                          </tr>
+                          
+                          
+                          <tr>
+                            <th>title</th>
+                            <td>Title for your snippet</td>
+                            <td>Body</td>
+                            <td>String</td>
+                          </tr>
+
+                          <tr>
+                            <th>code</th>
+                            <td>Code that you want to store</td>
+                            <td>Body</td>
+                            <td>String</td>
+                          </tr>
+
+                          <tr>
+                            <th>language</th>
+                            <td>Computer Language <i>{default : Python}</i></td>
+                            <td>Body</td>
+                            <td>String</td>
+                          </tr>
+
+                          <tr>
+                            <th>style</th>
+                            <td>Suitable Style <i>{ default : friendly }</i></td>
+                            <td>Body</td>
+                            <td>String</td>
+                          </tr>
+                          
+
+                        </tbody>
+                      </table>
+                </div>
+            
+            </div>
+
+            <div style="background-color: beige;width: 500px;margin-left: 5px;">
+                <div style="margin-top:10px;margin-left: 10px;margin-bottom: 10px;">
+                    <h6>Response Class (Status 200):</h6>
+                    <p style="margin-left: 15px;">{</p>
+
+
+                      <p style="margin-left: 30px;">"url": "http://127.0.0.1:8000/snippets/1/",</p>
+                      <p style="margin-left: 30px;"> "id": 1,</p>
+                      <p style="margin-left: 30px;">"highlight": "http://127.0.0.1:8000/snippets/1/highlight/",</p>
+                      <p style="margin-left: 30px;"> "owner": "saurabh1",</p>
+                      <p style="margin-left: 30px;">"title": "",</p>
+                      <p style="margin-left: 30px;"> "code": "print(\"Hello World\")",</p>
+                      <p style="margin-left: 30px;">"linenos": false,</p>
+                      <p style="margin-left: 30px;"> "language": "python",</p>
+                      <p style="margin-left: 30px;">"style": "friendly"</p>
+
+
+                  <p style="margin-left: 15px;">}</p>
+                </div>
+            
+            </div>
+
+        </div>
+
+
+
+        <!-- Snipptes Post Finish -->
+
+        <!-- Snippets id GET -->
+
+        <div style="background-color:#e1eaf7;">
+
+          <div style=" border-style: solid;border-color:#009cd4;background-color: #abe3f7; ">
+
+              <button class="btn btn-sm btn-info" disabled style="margin:4px;">GET</button> <b>/snippets/{id}/</b>
+          </div>
+          <div>
+              <div style="margin-top:6px;margin-left: 10px;">
+                  <h6>Implementation Notes :</h6>
+                  <p style="margin-left: 15px;">To get Token for a user to authenticate.</p> 
+              </div>
+          
+          </div>
+          <div>
+            
+              <div style="margin-top:6px;margin-left: 10px; margin-right:10px;">
+                  <h6>Parameters :</h6>
+                  <i style="margin-left: 20px;">No parameter required</i>
+              </div>
+          
+          </div>
+
+          <div style="background-color: beige;width: 500px;margin-left: 5px;">
+              <div style="margin-top:10px;margin-left: 10px;margin-bottom: 10px;">
+                  <h6>Response Class (Status 200):</h6>
+                  
+
+
+
+                      <p style="margin-left: 15px;">{</p>
+
+
+                          <p style="margin-left: 30px;">"url": "http://127.0.0.1:8000/snippets/1/",</p>
+                          <p style="margin-left: 30px;"> "id": 1,</p>
+                          <p style="margin-left: 30px;">"highlight": "http://127.0.0.1:8000/snippets/1/highlight/",</p>
+                          <p style="margin-left: 30px;"> "owner": "saurabh1",</p>
+                          <p style="margin-left: 30px;">"title": "",</p>
+                          <p style="margin-left: 30px;"> "code": "print(\"Hello World\")",</p>
+                          <p style="margin-left: 30px;">"linenos": false,</p>
+                          <p style="margin-left: 30px;"> "language": "python",</p>
+                          <p style="margin-left: 30px;">"style": "friendly"</p>
+
+
+                      <p style="margin-left: 15px;">}</p>
+                      
+
+
+
+
+                      
+
+                  
+              </div>
+          
+          </div>
+
+      </div>
+        
+
+
+
+        <!-- Snippets Id end GET -->
+        
+
+        <!-- Snippets Id PUT -->
+        
+
+
+        <div style="background-color:#e1eaf7;">
+
+          <div style=" border-style: solid;border-color: #808700;background-color: #e3eb8a; ">
+
+              <button class="btn btn-sm btn-warning" disabled style="margin:4px;">PUT</button> <b>/snippets/{id}/</b> 
+                      </div>
+          <div>
+              <div style="margin-top:6px;margin-left: 10px;">
+                  <h6>Implementation Notes :</h6>
+                  <p style="margin-left: 15px;">To Post New Snippet Data.</p> 
+              </div>
+          
+          </div>
+          <div>
+            
+              <div style="margin-top:6px;margin-left: 10px; margin-right:10px;">
+                  <h6>Parameters :</h6>
+                  <table class="table">
+                      <thead class="thead-dark">
+                        <tr>
+                          <th scope="col">Parameter</th>
+                          <th scope="col">Description</th>
+                          <th scope="col">Parameter Type</th>
+                          <th scope="col">Data Type</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>Authorization</th>
+                          <td>Token <i>{ Get your Token first }</i></td>
+                          <td>Header</td>
+                          <td>String</td>
+                        </tr>
+                        
+                        
+                        <tr>
+                          <th>title</th>
+                          <td>Title for your snippet</td>
+                          <td>Body</td>
+                          <td>String</td>
+                        </tr>
+
+                        <tr>
+                          <th>code</th>
+                          <td>Code that you want to store</td>
+                          <td>Body</td>
+                          <td>String</td>
+                        </tr>
+
+                        <tr>
+                          <th>language</th>
+                          <td>Computer Language <i>{default : Python}</i></td>
+                          <td>Body</td>
+                          <td>String</td>
+                        </tr>
+
+                        <tr>
+                          <th>style</th>
+                          <td>Suitable Style <i>{ default : friendly }</i></td>
+                          <td>Body</td>
+                          <td>String</td>
+                        </tr>
+                        
+
+                      </tbody>
+                    </table>
+              </div>
+          
+          </div>
+
+          <div style="background-color: beige;width: 500px;margin-left: 5px;">
+              <div style="margin-top:10px;margin-left: 10px;margin-bottom: 10px;">
+                  <h6>Response Class (Status 200):</h6>
+                  <p style="margin-left: 15px;">{</p>
+
+
+                    <p style="margin-left: 30px;">"url": "http://127.0.0.1:8000/snippets/1/",</p>
+                    <p style="margin-left: 30px;"> "id": 1,</p>
+                    <p style="margin-left: 30px;">"highlight": "http://127.0.0.1:8000/snippets/1/highlight/",</p>
+                    <p style="margin-left: 30px;"> "owner": "saurabh1",</p>
+                    <p style="margin-left: 30px;">"title": "",</p>
+                    <p style="margin-left: 30px;"> "code": "print(\"Hello World\")",</p>
+                    <p style="margin-left: 30px;">"linenos": false,</p>
+                    <p style="margin-left: 30px;"> "language": "python",</p>
+                    <p style="margin-left: 30px;">"style": "friendly"</p>
+
+
+                <p style="margin-left: 15px;">}</p>
+              </div>
+          
+          </div>
+
+      </div>
+
+
+
+
+
+        <!-- Snippets Id end PUT -->
+
+        <!-- Snippets Id PATCh -->
+
+
+
+
+        <div style="background-color:#e1eaf7;">
+
+          <div style=" border-style: solid;border-color: #0069d1;background-color: #add6ff; ">
+
+              <button class="btn btn-sm btn-primary" disabled style="margin:4px;">PATCH</button> <b>/snippets/{id}/</b> 
+                      </div>
+          <div>
+              <div style="margin-top:6px;margin-left: 10px;">
+                  <h6>Implementation Notes :</h6>
+                  <p style="margin-left: 15px;">To Post New Snippet Data.</p> 
+              </div>
+          
+          </div>
+          <div>
+            
+              <div style="margin-top:6px;margin-left: 10px; margin-right:10px;">
+                  <h6>Parameters :</h6>
+                  <table class="table">
+                      <thead class="thead-dark">
+                        <tr>
+                          <th scope="col">Parameter</th>
+                          <th scope="col">Description</th>
+                          <th scope="col">Parameter Type</th>
+                          <th scope="col">Data Type</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>Authorization</th>
+                          <td>Token <i>{ Get your Token first }</i></td>
+                          <td>Header</td>
+                          <td>String</td>
+                        </tr>
+                        
+                        
+                        <tr>
+                          <th>title</th>
+                          <td>Title for your snippet</td>
+                          <td>Body</td>
+                          <td>String</td>
+                        </tr>
+
+                        <tr>
+                          <th>code</th>
+                          <td>Code that you want to store</td>
+                          <td>Body</td>
+                          <td>String</td>
+                        </tr>
+
+                        <tr>
+                          <th>language</th>
+                          <td>Computer Language <i>{default : Python}</i></td>
+                          <td>Body</td>
+                          <td>String</td>
+                        </tr>
+
+                        <tr>
+                          <th>style</th>
+                          <td>Suitable Style <i>{ default : friendly }</i></td>
+                          <td>Body</td>
+                          <td>String</td>
+                        </tr>
+                        
+
+                      </tbody>
+                    </table>
+              </div>
+          
+          </div>
+
+          <div style="background-color: beige;width: 500px;margin-left: 5px;">
+              <div style="margin-top:10px;margin-left: 10px;margin-bottom: 10px;">
+                  <h6>Response Class (Status 200):</h6>
+                  <p style="margin-left: 15px;">{</p>
+
+
+                    <p style="margin-left: 30px;">"url": "http://127.0.0.1:8000/snippets/1/",</p>
+                    <p style="margin-left: 30px;"> "id": 1,</p>
+                    <p style="margin-left: 30px;">"highlight": "http://127.0.0.1:8000/snippets/1/highlight/",</p>
+                    <p style="margin-left: 30px;"> "owner": "saurabh1",</p>
+                    <p style="margin-left: 30px;">"title": "",</p>
+                    <p style="margin-left: 30px;"> "code": "print(\"Hello World\")",</p>
+                    <p style="margin-left: 30px;">"linenos": false,</p>
+                    <p style="margin-left: 30px;"> "language": "python",</p>
+                    <p style="margin-left: 30px;">"style": "friendly"</p>
+
+
+                <p style="margin-left: 15px;">}</p>
+              </div>
+          
+          </div>
+
+      </div>
+
+
+
+
+        <!-- Snippets Id end PATCH -->
+
+
+        <!-- Snippets Id DELETE -->
+
+
+
+
+        <div style="background-color:#e1eaf7;">
+
+          <div style=" border-style: solid;border-color:#00c400;background-color: #73ff73; ">
+
+              <button class="btn btn-sm btn-success" disabled style="margin:4px;">DELETE</button> <b>/snippets/{id}/</b>
+          </div>
+          <div>
+              <div style="margin-top:6px;margin-left: 10px;">
+                  <h6>Implementation Notes :</h6>
+                  <p style="margin-left: 15px;">To get Token for a user to authenticate.</p> 
+              </div>
+          
+          </div>
+          <div>
+            
+              <div style="margin-top:6px;margin-left: 10px; margin-right:10px;">
+                  <h6>Parameters :</h6>
+                  <i style="margin-left: 20px;">No parameter required</i>
+              </div>
+          
+          </div>
+
+          <div style="background-color: beige;width: 500px;margin-left: 5px;">
+              <div style="margin-top:10px;margin-left: 10px;margin-bottom: 10px;">
+                  <h6>Response Class (Status 200):</h6>
+                  
+
+
+
+                      <p style="margin-left: 15px;">{</p>
+
+
+        
+
+
+                      <p style="margin-left: 15px;">}</p>
+                      
+
+
+
+
+                      
+
+                  
+              </div>
+          
+          </div>
+
+      </div>
+
+
+
+        <!-- Snippets Id end DELETE -->
+
+
+        
+
+
+
+
         
     </div>
-  
-  
-  wait for update
     
 </body>
 </html>
